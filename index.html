@@ -1,31 +1,58 @@
 <html>
-  <head>
-    <title>Angular 2 QuickStart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
-  <!-- 3. Display the application -->
-  <body>
-    <div id="container">
-      <div class="row">
-        <div class="span12">
-          <my-app>Loading...</my-app>
-        </div>
-      </div>
-    </div>
-  </body>
+
+<head>
+	<title>Angular 2 QuickStart</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- 1. Load libraries -->
+	<!-- Polyfill(s) for older browsers -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
+	<script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+	<!-- 2. Configure SystemJS -->
+	<script src="systemjs.config.js"></script>
+	<script>
+		System.import('app').catch(function (err) {
+			console.error(err);
+		});
+	</script>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+	<form method="post" id="searchForm">
+	<div class="container header">
+		<div class="row">
+			<div class="col-md-2 align-left">
+				<span class="logo">LemonsWiki.com</span>
+			</div>
+			<div class="col-md-5 align-right">
+				<input type="text" class="form-control" id="searchTxt" placeholder="Search by title, car, track, race name" required />
+			</div>
+			<div class="col-md-1 align-left">
+				<button type="submit" class="btn btn-primary" id="btnSearch">Search</button>
+			</div>
+			<div class="col-md-4 nav">
+				<ul class="list-inline">
+					<li><a href="#" class="btn">Home</a></li>
+					<li><a href="#" class="btn">Tracks</a></li>
+					<li><a href="#" class="btn">Races</a></li>
+					<li><a href="#" class="btn">Add Video</a></li>
+					<li><a href="#" class="btn">Login / Create Account</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</form>
+	<div class="row">
+		<div class="span12">
+			<my-app>Loading...</my-app>
+		</div>
+	</div>
+</body>
+
 </html>
