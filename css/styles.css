@@ -27,9 +27,32 @@ body {
 }
 .nav ul li a {
 	color: yellow;
-	text-decoration: underline;
+	text-decoration: none;
 	font-family:fantasy;
 }
+.nav ul li a:hover {
+	color:  white;
+}
+h3 {
+	font-size:1.2em;
+}
+
+.videos a {
+	text-decoration: none;
+}
+
+.videos img:hover {
+	opacity: 0.5;
+}
+
+
+.footer {
+	padding: 2em;
+	background-color: black;
+	color: yellow;
+	font-size: 0.9em;
+}
+
 
  /*
   * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
